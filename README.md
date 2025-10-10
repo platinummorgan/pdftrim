@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PDF Book Page Trimmer
 
 A Python application for extracting and trimming pages from book-style PDFs. This tool allows you to separate left and right pages from scanned book PDFs, trim the edges independently, and save them as individual image files.
@@ -8,7 +9,17 @@ A Python application for extracting and trimming pages from book-style PDFs. Thi
 - ✂️ Independent trimming for left and right pages
 - 👁️ Live preview with adjustable trim settings
 - 🎯 Smart page naming (Title, Left_page1, Right_page1, etc.)
-- 🖼️ Adjustable DPI for output images
+# PDF Book Page Trimmer
+
+A Python application for extracting and trimming pages from book-style PDFs. This tool allows you to separate left and right pages from scanned book PDFs, trim the edges independently, and save them as individual image files.
+
+## Features
+
+- � Extract pages from PDF books
+- ✂️ Independent trimming for left and right pages
+- 👁️ Live preview with adjustable trim settings
+- 🎯 Smart page naming (Title, Left_page1, Right_page1, etc.)
+- �🖼️ Adjustable DPI for output images
 - 💾 Save to your chosen directory
 - 🖱️ User-friendly GUI interface
 
@@ -136,6 +147,18 @@ pip install Wand
 
 The current implementation uses PyMuPDF which provides similar functionality with easier Python integration.
 
+## Next.js Frontend Quickstart
+
+This repository also contains a Next.js frontend app. To run the frontend locally:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the frontend.
+
 ## License
 
 This project is provided as-is for personal use.
@@ -143,3 +166,4 @@ This project is provided as-is for personal use.
 ## Contributing
 
 Feel free to submit issues or pull requests for improvements!
+
