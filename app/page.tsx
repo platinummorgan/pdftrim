@@ -28,56 +28,319 @@ export default function Home() {
           {/* Rich Content Section - Above the Fold */}
           <article className="prose prose-lg max-w-none mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-6">
-              PDF Book Page Trimmer — Crop Left/Right Pages & Export
+              PDF Book Page Trimmer — Professional Crop Tool for Scanned Books & Documents
             </h1>
             
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              This free online tool helps you remove unwanted margins from scanned book PDFs by 
-              applying separate crop settings for left and right pages. Perfect for digitizing 
-              your book collection, creating eBooks for Kindle, or preparing scanned documents 
-              for professional printing. You can preview each page with visual crop lines, copy 
-              settings across multiple pages, and export selected pages to JPG, PNG, TIFF, or 
-              WebP at your chosen resolution.
+              Transform your scanned book PDFs into clean, professional-quality images with our free 
+              online trimming tool. Unlike basic PDF editors that apply uniform crops across entire 
+              documents, our specialized tool recognizes that book scans need intelligent handling—each 
+              two-page spread requires different crop settings for left and right pages due to binding 
+              gutters, varying margins, and page asymmetry.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">How It Works</h2>
+            <p className="text-lg text-gray-700 mb-8">
+              Whether you're digitizing a personal library, creating eBooks for Kindle or other e-readers, 
+              preparing manuscripts for professional printing, or archiving historical documents, this tool 
+              gives you precise control over every page. Preview each crop with color-coded visual guides, 
+              batch-apply settings across multiple pages, and export in your choice of format (JPG, PNG, 
+              TIFF, or WebP) at resolutions from 72 to 600 DPI.
+            </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Why Traditional PDF Croppers Fall Short</h2>
             <p className="text-gray-700 mb-4">
-              Our PDF trimming tool uses advanced server-side processing with PyMuPDF to deliver 
-              professional-quality results. Here's how to use it:
+              Most PDF editing tools treat cropping as a one-size-fits-all operation, applying identical 
+              margins to every page. This approach fails spectacularly with scanned books because:
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+              <li><strong>Binding gutters vary:</strong> The center area between left and right pages often 
+                  contains shadows, curves, or distortions from book spines that need more aggressive trimming.</li>
+              <li><strong>Asymmetric margins:</strong> Left pages typically have more white space on the left 
+                  edge, while right pages have more on the right—applying the same crop to both wastes content 
+                  or leaves ugly margins.</li>
+              <li><strong>Page-specific needs:</strong> Title pages, chapter openings, and covers often need 
+                  completely different crop settings than body text pages.</li>
+              <li><strong>Variable scanning quality:</strong> Different sections of a book may have been scanned 
+                  at different angles or with different border widths, requiring per-page adjustments.</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">How Our Tool Solves These Problems</h2>
+            <p className="text-gray-700 mb-4">
+              PDF Book Page Trimmer was designed from the ground up for book digitization professionals, 
+              librarians, students, and enthusiasts. Here's what makes it different:
             </p>
             
-            <ol className="list-decimal list-inside space-y-3 text-gray-700 mb-6">
-              <li className="pl-2">
-                <strong>Upload your PDF:</strong> Select a scanned book PDF from your computer. 
-                We support files up to 100MB in size.
-              </li>
-              <li className="pl-2">
-                <strong>Adjust crop settings:</strong> Choose between Left Page or Right Page mode 
-                and use the intuitive sliders to set trim percentages for each side (left, right, 
-                top, bottom). Red lines show left page crops, blue lines show right page crops.
-              </li>
-              <li className="pl-2">
-                <strong>Preview in real-time:</strong> Navigate through your PDF pages and see 
-                exactly how the crop will look with visual overlay lines on each page.
-              </li>
-              <li className="pl-2">
-                <strong>Copy settings efficiently:</strong> Use "Copy to All Pages" or "Copy to 
-                Remaining" buttons to apply your current page's crop settings to multiple pages at once.
-              </li>
-              <li className="pl-2">
-                <strong>Select pages to export:</strong> Choose which pages you want to include 
-                in your final output—useful for skipping blank pages or unwanted content.
-              </li>
-              <li className="pl-2">
-                <strong>Configure export options:</strong> Select your preferred image format 
-                (JPG, PNG, TIFF, or WebP), adjust quality settings (1-100), and set DPI 
-                (72-600) for print or screen use.
-              </li>
-              <li className="pl-2">
-                <strong>Process and download:</strong> Click "Process PDF" and receive a ZIP 
-                file containing all your cropped pages with sequential numbering.
-              </li>
-            </ol>
+            <div className="bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-purple-600 p-6 mb-6">
+              <h3 className="text-xl font-semibold text-purple-900 mb-3">Independent Left/Right Cropping</h3>
+              <p className="text-gray-700 mb-3">
+                Set different crop percentages for left and right pages. For example, you might trim 5% from 
+                the outer edge of left pages but 50% from the center to remove the binding gutter, while doing 
+                the opposite for right pages. This ensures both pages in a spread are cropped optimally.
+              </p>
+              <p className="text-gray-700">
+                <strong>Visual feedback:</strong> Red dashed lines show where left page crops will occur, 
+                blue dashed lines show right page crops—you see exactly what you'll get before processing.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-green-50 to-teal-50 border-l-4 border-green-600 p-6 mb-6">
+              <h3 className="text-xl font-semibold text-green-900 mb-3">Per-Page Customization</h3>
+              <p className="text-gray-700 mb-3">
+                Every page in your PDF can have unique crop settings. Navigate through your document, adjust 
+                crops for special pages like covers or title pages, then use batch operations ("Copy to All" 
+                or "Copy to Remaining") to apply common settings across body text pages.
+              </p>
+              <p className="text-gray-700">
+                <strong>Single Page Mode:</strong> Toggle this for pages that aren't two-page spreads—perfect 
+                for front/back covers, title pages, or documents that were scanned one page at a time.
+              </p>
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Step-by-Step Usage Guide</h2>
+            <p className="text-gray-700 mb-4">
+              Follow this workflow to achieve professional results every time:
+            </p>
+            
+            <div className="space-y-6 mb-8">
+              <div className="bg-white border-l-4 border-purple-600 p-5 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Step 1: Upload Your PDF</h3>
+                <p className="text-gray-700 mb-2">
+                  Click "Choose File" and select a PDF from your computer (maximum 100MB). The tool supports 
+                  PDFs of any version and any number of pages. Common sources include:
+                </p>
+                <ul className="list-disc list-inside ml-4 text-gray-700 space-y-1">
+                  <li>Flatbed scanner output (two pages per scan)</li>
+                  <li>Book scanning services like ScanSnap or Plustek</li>
+                  <li>Camera-captured book pages assembled into PDF</li>
+                  <li>Downloaded public domain books from Internet Archive</li>
+                </ul>
+              </div>
+
+              <div className="bg-white border-l-4 border-purple-600 p-5 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Step 2: Configure Initial Crop Settings</h3>
+                <p className="text-gray-700 mb-2">
+                  Start with the first page and set your baseline crops:
+                </p>
+                <ul className="list-disc list-inside ml-4 text-gray-700 space-y-1">
+                  <li><strong>Left Page settings:</strong> Typically 5-10% from outer edge, 45-55% from center 
+                      (to remove binding), 3-5% top/bottom</li>
+                  <li><strong>Right Page settings:</strong> Mirror of left (45-55% from left/center, 5-10% from 
+                      outer right edge)</li>
+                  <li><strong>Watch the preview:</strong> Colored lines update in real-time as you adjust sliders</li>
+                </ul>
+              </div>
+
+              <div className="bg-white border-l-4 border-purple-600 p-5 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Step 3: Apply Settings Across Pages</h3>
+                <p className="text-gray-700 mb-2">
+                  Once you're happy with page 1's crops, use batch operations:
+                </p>
+                <ul className="list-disc list-inside ml-4 text-gray-700 space-y-1">
+                  <li><strong>"Copy to All Pages":</strong> Apply current settings to every page (use this if 
+                      all pages are similar)</li>
+                  <li><strong>"Copy to Remaining":</strong> Apply to all pages after the current one (useful 
+                      when front matter needs different crops than body text)</li>
+                </ul>
+              </div>
+
+              <div className="bg-white border-l-4 border-purple-600 p-5 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Step 4: Fine-Tune Special Pages</h3>
+                <p className="text-gray-700 mb-2">
+                  Navigate through your PDF using Previous/Next buttons and adjust pages that need special treatment:
+                </p>
+                <ul className="list-disc list-inside ml-4 text-gray-700 space-y-1">
+                  <li><strong>Title pages:</strong> Often need less aggressive crops or Single Page Mode</li>
+                  <li><strong>Chapter openings:</strong> May have decorative elements requiring custom margins</li>
+                  <li><strong>Covers:</strong> Enable Single Page Mode and adjust crops to preserve design elements</li>
+                  <li><strong>Index/appendix:</strong> Smaller text may need tighter crops to maximize readability</li>
+                </ul>
+              </div>
+
+              <div className="bg-white border-l-4 border-purple-600 p-5 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Step 5: Select Pages for Export</h3>
+                <p className="text-gray-700 mb-2">
+                  In the "Pages to Export" section, choose which pages to include:
+                </p>
+                <ul className="list-disc list-inside ml-4 text-gray-700 space-y-1">
+                  <li>Uncheck blank pages or advertising inserts you don't want</li>
+                  <li>Deselect pages with scanning artifacts or errors</li>
+                  <li>Export only specific chapters by selecting a page range</li>
+                </ul>
+              </div>
+
+              <div className="bg-white border-l-4 border-purple-600 p-5 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Step 6: Choose Export Format & Quality</h3>
+                <p className="text-gray-700 mb-3">
+                  Select the best format for your use case:
+                </p>
+                <div className="grid md:grid-cols-2 gap-3 mb-3">
+                  <div className="bg-gray-50 p-3 rounded">
+                    <p className="font-semibold text-gray-900">JPG (Recommended for most books)</p>
+                    <p className="text-sm text-gray-700">Quality 85-95, 300 DPI for Kindle/iPad</p>
+                  </div>
+                  <div className="bg-gray-50 p-3 rounded">
+                    <p className="font-semibold text-gray-900">PNG (For text-heavy documents)</p>
+                    <p className="text-sm text-gray-700">Lossless, 150-300 DPI for sharp text</p>
+                  </div>
+                  <div className="bg-gray-50 p-3 rounded">
+                    <p className="font-semibold text-gray-900">TIFF (For professional printing)</p>
+                    <p className="text-sm text-gray-700">LZW compression, 300-600 DPI</p>
+                  </div>
+                  <div className="bg-gray-50 p-3 rounded">
+                    <p className="font-semibold text-gray-900">WebP (For web galleries)</p>
+                    <p className="text-sm text-gray-700">Quality 90, 150 DPI, smallest file size</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white border-l-4 border-purple-600 p-5 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Step 7: Process & Download</h3>
+                <p className="text-gray-700 mb-2">
+                  Click "Process PDF" and wait for server-side processing (usually 30 seconds to 3 minutes 
+                  depending on page count and DPI). You'll receive a ZIP file containing numbered image files 
+                  (001.jpg, 002.jpg, etc.) ready for import into eBook creation tools, photo organizers, or 
+                  printing services.
+                </p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Common Use Cases & Real-World Examples</h2>
+            
+            <div className="space-y-6 mb-8">
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">
+                  📚 Digitizing a Personal Book Collection
+                </h3>
+                <p className="text-gray-700 mb-3">
+                  <strong>Scenario:</strong> You have 200 vintage paperbacks you want to preserve digitally 
+                  before they deteriorate. You've scanned them two pages at a time using a flatbed scanner.
+                </p>
+                <p className="text-gray-700 mb-3">
+                  <strong>Solution:</strong> Upload each book's PDF, set left page crops to 7% left / 48% right 
+                  (to remove the binding shadow) and right page crops to 48% left / 7% right. Copy to all pages, 
+                  then go back to manually adjust the cover page with Single Page Mode enabled. Export as JPG 
+                  at quality 92, 300 DPI for excellent quality with manageable file sizes. Each book takes 
+                  about 3-5 minutes to process.
+                </p>
+              </div>
+
+              <div className="bg-green-50 border-l-4 border-green-600 p-6">
+                <h3 className="text-lg font-semibold text-green-900 mb-2">
+                  📖 Creating Kindle eBooks from Scanned Textbooks
+                </h3>
+                <p className="text-gray-700 mb-3">
+                  <strong>Scenario:</strong> You need to create eBook versions of academic textbooks for 
+                  students who prefer digital reading on Kindle or tablet devices.
+                </p>
+                <p className="text-gray-700 mb-3">
+                  <strong>Solution:</strong> After scanning, use aggressive crops on the center binding area 
+                  (50-55%) to remove all gutter shadows and ensure clean page splits. For textbooks with wide 
+                  margins, crop 8-10% from outer edges. Export as JPG quality 88, 150 DPI—this balances sharp 
+                  text with file sizes that won't slow down e-readers. Import the numbered images into Calibre 
+                  or Kindle Create to assemble your final eBook.
+                </p>
+              </div>
+
+              <div className="bg-purple-50 border-l-4 border-purple-600 p-6">
+                <h3 className="text-lg font-semibold text-purple-900 mb-2">
+                  🏛️ Archiving Historical Documents
+                </h3>
+                <p className="text-gray-700 mb-3">
+                  <strong>Scenario:</strong> A library is digitizing rare 19th-century books for a public 
+                  archive. Quality and longevity are paramount.
+                </p>
+                <p className="text-gray-700 mb-3">
+                  <strong>Solution:</strong> Use conservative crops to preserve all content including margin 
+                  notes and printing marks (3-5% on all edges). Export as TIFF at 600 DPI for archival-grade 
+                  images suitable for long-term preservation. The lossless format ensures no quality 
+                  degradation over time, and high DPI allows future researchers to zoom in on fine details 
+                  like old typography or handwritten annotations.
+                </p>
+              </div>
+
+              <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6">
+                <h3 className="text-lg font-semibold text-yellow-900 mb-2">
+                  ✏️ Preparing Manuscript Pages for Professional Printing
+                </h3>
+                <p className="text-gray-700 mb-3">
+                  <strong>Scenario:</strong> An author has a manuscript that was scanned in two-page spreads 
+                  and needs individual page images for submission to a print-on-demand service.
+                </p>
+                <p className="text-gray-700 mb-3">
+                  <strong>Solution:</strong> Set precise crops to maintain correct page dimensions for the 
+                  target book size (e.g., 6"x9"). Use Single Page Mode for cover artwork. Export as PNG at 
+                  300 DPI for crisp text with no compression artifacts. The lossless PNG format ensures that 
+                  text remains sharp through the printing process, and the high DPI meets professional printing 
+                  standards.
+                </p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Pro Tips for Best Results</h2>
+            <div className="bg-gradient-to-r from-orange-50 to-red-50 border rounded-lg p-6 mb-8">
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-orange-600 font-bold mr-2">💡</span>
+                  <div>
+                    <strong>Start conservative, then tighten:</strong> Begin with smaller crop percentages 
+                    (3-5%) and gradually increase until you've removed all unwanted margins. It's easier to 
+                    crop more than to recover accidentally trimmed content.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 font-bold mr-2">💡</span>
+                  <div>
+                    <strong>Use preview navigation extensively:</strong> Check at least 5-10 pages throughout 
+                    your document before processing. Books often have varying margins in different sections 
+                    (front matter, body text, index).
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 font-bold mr-2">💡</span>
+                  <div>
+                    <strong>Match DPI to your final use:</strong> Don't waste processing time on 600 DPI if 
+                    you're just reading on a tablet (150 DPI is plenty). Reserve high DPI for professional 
+                    printing or archival purposes.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 font-bold mr-2">💡</span>
+                  <div>
+                    <strong>JPG quality sweet spot:</strong> For most books, quality 88-92 is indistinguishable 
+                    from maximum quality but produces significantly smaller files. Only use 95-100 for photos 
+                    or illustrations with subtle color gradations.
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 font-bold mr-2">💡</span>
+                  <div>
+                    <strong>Deselect blank pages early:</strong> Many scanned books have blank pages between 
+                    chapters. Uncheck these in the export selection to avoid wasting processing time and 
+                    creating unnecessary files.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Understanding Crop Percentages</h2>
+            <p className="text-gray-700 mb-4">
+              Crop percentages work from each edge inward. Here's how to interpret them:
+            </p>
+            <div className="bg-gray-50 border rounded-lg p-6 mb-8">
+              <ul className="space-y-3 text-gray-700">
+                <li><strong>Left 10%:</strong> Remove 10% of the page width from the left edge</li>
+                <li><strong>Right 50%:</strong> Remove 50% of the page width from the right edge (this removes 
+                    the entire right page in a two-page spread)</li>
+                <li><strong>Top 5%:</strong> Remove 5% of page height from the top</li>
+                <li><strong>Bottom 5%:</strong> Remove 5% of page height from the bottom</li>
+              </ul>
+              <p className="text-gray-700 mt-4">
+                <strong>Example for left page in a book spread:</strong> If you set Left=5%, Right=50%, Top=3%, 
+                Bottom=3%, the tool will keep the left 45% of the page width (trimming 5% off the outer left edge 
+                and 50% off the center/right where the binding and right page are) and keep 94% of the height 
+                (trimming 3% from top and bottom margins).
+              </p>
+            </div>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Key Features</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-6">
