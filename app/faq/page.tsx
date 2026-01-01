@@ -16,10 +16,11 @@ export default function FAQPage() {
               PDF Book Page Trimmer
             </Link>
             <nav className="flex gap-6 text-sm">
+              <Link href="/guides" className="hover:underline">Guides</Link>
+              <Link href="/blog" className="hover:underline">Blog</Link>
               <Link href="/faq" className="hover:underline font-semibold">FAQ</Link>
+              <Link href="/about" className="hover:underline">About</Link>
               <Link href="/contact" className="hover:underline">Contact</Link>
-              <Link href="/privacy" className="hover:underline">Privacy</Link>
-              <Link href="/terms" className="hover:underline">Terms</Link>
             </nav>
           </div>
         </div>

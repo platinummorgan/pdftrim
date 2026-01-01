@@ -15,10 +15,11 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <h1 className="text-2xl font-bold">PDF Book Page Trimmer</h1>
               <nav className="flex gap-6 text-sm">
+                <Link href="/guides" className="hover:underline">Guides</Link>
+                <Link href="/blog" className="hover:underline">Blog</Link>
                 <Link href="/faq" className="hover:underline">FAQ</Link>
+                <Link href="/about" className="hover:underline">About</Link>
                 <Link href="/contact" className="hover:underline">Contact</Link>
-                <Link href="/privacy" className="hover:underline">Privacy</Link>
-                <Link href="/terms" className="hover:underline">Terms</Link>
               </nav>
             </div>
           </div>
@@ -532,10 +533,130 @@ export default function Home() {
           </div>
         </main>
 
+        {/* Comprehensive Resource Links Section */}
+        <section className="bg-gradient-to-b from-white to-gray-100 py-16">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">
+              Explore Our Complete PDF Digitization Resources
+            </h2>
+            <p className="text-center text-gray-600 mb-12 text-lg">
+              Everything you need to master book scanning and PDF trimming
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-purple-600 hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-3">📚</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  <Link href="/guides" className="hover:text-purple-700">Complete Guides & Tutorials</Link>
+                </h3>
+                <p className="text-gray-700 mb-4 text-sm">
+                  In-depth tutorials covering scanner selection, optimal settings, advanced trimming
+                  techniques, export format selection, and troubleshooting common problems.
+                </p>
+                <Link href="/guides" className="text-purple-600 hover:text-purple-800 font-semibold text-sm">
+                  Read Guides →
+                </Link>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-600 hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-3">📝</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  <Link href="/blog" className="hover:text-blue-700">Expert Articles & Tips</Link>
+                </h3>
+                <p className="text-gray-700 mb-4 text-sm">
+                  Learn from detailed articles on book digitization workflows, creating Kindle eBooks,
+                  understanding DPI and quality, copyright considerations, and scanner reviews.
+                </p>
+                <Link href="/blog" className="text-blue-600 hover:text-blue-800 font-semibold text-sm">
+                  Browse Blog →
+                </Link>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-green-600 hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-3">⚖️</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  <Link href="/comparison" className="hover:text-green-700">Tool Comparison Guide</Link>
+                </h3>
+                <p className="text-gray-700 mb-4 text-sm">
+                  Honest comparison of our tool vs. Adobe Acrobat, PDF-XChange Editor, and other solutions.
+                  Learn which tool is best for your specific use case and budget.
+                </p>
+                <Link href="/comparison" className="text-green-600 hover:text-green-800 font-semibold text-sm">
+                  Compare Tools →
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-lg p-6 border border-purple-200">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Popular Topics</h3>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link href="/guides#scanning-settings" className="text-purple-700 hover:underline">
+                      → Optimal Scanner Settings for Books
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/guides#crop-techniques" className="text-purple-700 hover:underline">
+                      → Understanding Crop Percentages
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/guides#export-formats" className="text-purple-700 hover:underline">
+                      → Choosing Export Formats (JPG/PNG/TIFF)
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/guides#troubleshooting" className="text-purple-700 hover:underline">
+                      → Fixing Binding Shadows & Distortion
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog" className="text-purple-700 hover:underline">
+                      → Creating Kindle eBooks from PDFs
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-6 border border-orange-200">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Need Help?</h3>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link href="/faq" className="text-orange-700 hover:underline">
+                      → Frequently Asked Questions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about" className="text-orange-700 hover:underline">
+                      → About Our Tool & Technology
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="text-orange-700 hover:underline">
+                      → Contact Support
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/privacy" className="text-orange-700 hover:underline">
+                      → Privacy Policy & Data Security
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/terms" className="text-orange-700 hover:underline">
+                      → Terms of Service
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="bg-gray-900 text-gray-300 mt-20">
           <div className="container mx-auto px-4 py-8">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-4 gap-8">
               <div>
                 <h3 className="text-white font-semibold mb-3">PDF Book Page Trimmer</h3>
                 <p className="text-sm">
@@ -543,18 +664,26 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h3 className="text-white font-semibold mb-3">Legal</h3>
+                <h3 className="text-white font-semibold mb-3">Resources</h3>
                 <ul className="space-y-2 text-sm">
-                  <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
-                  <li><Link href="/terms" className="hover:text-white">Terms of Service</Link></li>
+                  <li><Link href="/guides" className="hover:text-white">Guides & Tutorials</Link></li>
+                  <li><Link href="/blog" className="hover:text-white">Blog Articles</Link></li>
+                  <li><Link href="/comparison" className="hover:text-white">Tool Comparison</Link></li>
+                  <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-white font-semibold mb-3">Company</h3>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="/about" className="hover:text-white">About Us</Link></li>
                   <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-white font-semibold mb-3">Help</h3>
+                <h3 className="text-white font-semibold mb-3">Legal</h3>
                 <ul className="space-y-2 text-sm">
-                  <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
-                  <li><Link href="/about" className="hover:text-white">About</Link></li>
+                  <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
+                  <li><Link href="/terms" className="hover:text-white">Terms of Service</Link></li>
                 </ul>
               </div>
             </div>
